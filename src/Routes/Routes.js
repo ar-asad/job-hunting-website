@@ -5,6 +5,7 @@ import Home from '../pages/Home/Home';
 import Statistics from '../pages/Statistics/Statistics';
 import AppliedJobs from '../pages/AppliedJobs/AppliedJobs';
 import Blogs from '../pages/Blogs/Blogs';
+import FeatureDetails from '../pages/FeatureDetails/FeatureDetails';
 
 const router = createBrowserRouter([
     {
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/statistics',
-                element: <Statistics></Statistics>
+                element: <Statistics></Statistics>,
+                loader: () => fetch('maks.json')
             },
             {
                 path: '/job',
@@ -26,6 +28,11 @@ const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blogs></Blogs>
+            },
+            {
+                path: '/feature/:Id',
+                element: <FeatureDetails></FeatureDetails>
+                // loader: () => fetch('feature.json')
             }
         ]
     }

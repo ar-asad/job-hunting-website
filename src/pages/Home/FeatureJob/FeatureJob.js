@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FeatureJobCards from './FeatureJobCards';
 
+
 const FeatureJob = () => {
     const [features, setFeatures] = useState([]);
 
@@ -9,6 +10,7 @@ const FeatureJob = () => {
             .then(res => res.json())
             .then(data => setFeatures(data))
     }, [])
+    console.log(features)
 
     return (
         <div className='my-10'>
@@ -20,6 +22,7 @@ const FeatureJob = () => {
                 {
                     features.map(feature => <FeatureJobCards key={feature.id} feature={feature}></FeatureJobCards>)
                 }
+                <button>see all</button>
             </div>
         </div>
     );

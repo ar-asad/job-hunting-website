@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoLocationOutline } from "react-icons/io5";
 import { AiOutlineDollarCircle } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const FeatureJobCards = ({ feature }) => {
     const { company_name, job_name, id, job_time, job_type, location, salary, job_img } = feature;
@@ -21,7 +22,9 @@ const FeatureJobCards = ({ feature }) => {
                     <span><AiOutlineDollarCircle className='inline-block'></AiOutlineDollarCircle> Salary : {salary}</span>
                 </div >
                 <div className="card-actions mt-4">
-                    <button className="btn btn-primary">View Details</button>
+                    <Link to={`/feature/${id}`}>
+                        <button className="btn btn-primary">View Details</button>
+                    </Link>
                 </div>
             </div>
         </div>
