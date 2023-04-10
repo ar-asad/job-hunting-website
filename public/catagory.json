@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "job_name": "Account & Finance",
+        "job_img": "https://img.freepik.com/free-photo/flat-lay-business-concept_53876-24738.jpg?w=996&t=st=1681104005~exp=1681104605~hmac=3ed5ac0861b675c85fb9cf58dff5390a922b1c11ee3550aff8c9c0db104c00f8",
+        "jobs": "300"
+    },
+    {
+        "id": "2",
+        "job_name": "Creative Design",
+        "job_img": "https://img.freepik.com/free-vector/design-concept-illustration-idea-style-creativity-projects_613284-3229.jpg?w=1060&t=st=1681104077~exp=1681104677~hmac=1330cc2e8abe47985bc94248019c7654a65ab0ce6ebbba16c99bdd443d680f4e",
+        "jobs": "100+"
+    },
+    {
+        "id": "3",
+        "job_name": "Marketing $ Sales",
+        "job_img": "https://img.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_53876-167088.jpg?w=826&t=st=1681104242~exp=1681104842~hmac=32596475f4054964ea8b579f31fa52d9bd46f26d00d587da19927780ae94e7e4",
+        "jobs": "400"
+    },
+    {
+        "id": "4",
+        "job_name": "Engineering Job",
+        "job_img": "https://img.freepik.com/free-photo/two-colleagues-factory_1303-14331.jpg?w=826&t=st=1681104310~exp=1681104910~hmac=af7356751d83ed1ea5463b70cd3184bdba72e62df2ce07af0da5361b04de4228",
+        "jobs": "224"
+    }
+]
