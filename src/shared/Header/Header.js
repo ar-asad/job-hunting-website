@@ -21,7 +21,7 @@ const Header = () => {
                         {menuItem}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-3xl font-bold">
+                <Link to='/' className="btn btn-ghost normal-case text-2xl lg:text-4xl font-bold">
                     Job Hunting
                 </Link>
             </div>

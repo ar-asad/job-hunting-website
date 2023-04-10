@@ -6,11 +6,11 @@ const FeatureJob = () => {
     const [features, setFeatures] = useState([]);
 
     useEffect(() => {
-        fetch('feature.json')
+        fetch('/feature.json')
             .then(res => res.json())
             .then(data => setFeatures(data))
     }, [])
-    console.log(features)
+
 
     return (
         <div className='my-10'>

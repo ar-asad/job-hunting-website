@@ -1,9 +1,11 @@
 import React from 'react';
+import AppledJobsAll from './AppledJobsAll';
 
 const AppliedJobs = () => {
     return (
-        <div>
-            <h2>This is applied jobs</h2>
+        <div className='my-20'>
+            <h2 className='text-4xl font-bold mb-20 text-center'>Job Details</h2>
+            <AppledJobsAll></AppledJobsAll>
         </div>
     );
 };
