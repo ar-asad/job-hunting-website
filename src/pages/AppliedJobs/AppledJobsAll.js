@@ -7,9 +7,9 @@ const AppledJobsAll = ({ sc }) => {
     const { job_img, job_name, company_name, job_time, job_type, location, salary, id } = sc;
 
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-3 items-center justify-between mb-14'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 items-center justify-between mb-14  border border-slate-200'>
             <div className="flex items-center justify-center   ">
-                <img className='w-2/4 bg-slate-100' src={job_img} alt="" />
+                <img className='w-2/4 bg-slate-100 p-2' src={job_img} alt="" />
             </div>
             <div className='font-semibold'>
                 <h2 className="card-title font-bold text-xl mb-2">{job_name}</h2>

@@ -32,9 +32,14 @@ const router = createBrowserRouter([
             {
                 path: '/feature/:Id',
                 element: <FeatureDetails></FeatureDetails>
+            },
+            {
+                path: '*',
+                element:
             }
         ]
     }
+
 ]);
 
 

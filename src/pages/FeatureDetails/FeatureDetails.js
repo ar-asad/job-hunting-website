@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import useFetchData from '../../hooks/useFetchData';
 import { useParams } from 'react-router-dom';
 import { AiOutlineDollarCircle } from 'react-icons/ai';
 import { BsTelephone } from "react-icons/bs";
