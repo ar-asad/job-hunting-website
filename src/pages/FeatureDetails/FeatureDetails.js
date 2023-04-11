@@ -6,13 +6,14 @@ import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { SlCalender } from "react-icons/sl";
 import { IoLocationOutline } from 'react-icons/io5';
+import { addToDb } from '../../utilities/fakedb';
 
 
 const FeatureDetails = () => {
     const [feature, setFeature] = useState({});
-    const { id } = useParams();
+    const { Id } = useParams();
 
-    const { description, education, experience, responsibility, salary, job_name, location } = feature;
+    const { description, education, experience, responsibility, id, salary, job_name, location } = feature;
 
 
     useEffect(() => {
@@ -21,12 +22,16 @@ const FeatureDetails = () => {
             .then(data => {
                 console.log(data)
                 if (data) {
-                    const unicData = data.find(d => d.id === id)
+                    const unicData = data.find(d => d.id === Id)
                     setFeature(unicData)
                 }
             })
-    }, [id])
+    }, [Id])
     console.log(feature)
+
+    const handleAddToLocalStorage = (id) => {
+        addToDb(id)
+    }
 
     return (
         <div className='my-20'>
@@ -53,7 +58,7 @@ const FeatureDetails = () => {
                             <p className='text-xl'><AiOutlineMail className='inline-block'></AiOutlineMail> <span className='font-bold'>Email :</span> jobs@gmail.com</p>
                             <p className='text-xl'><IoLocationOutline className='inline-block'></IoLocationOutline> <span className='font-bold'>Address :</span> Dhanmondi 32, Sukrabad {location}</p>
                             <div className="card-actions mt-8 ">
-                                <button className="btn btn-primary w-full">Apply Now</button>
+                                <button onClick={() => handleAddToLocalStorage(id)} className="btn btn-primary w-full">Apply Now</button>
                             </div>
                         </div>
                     </div>
