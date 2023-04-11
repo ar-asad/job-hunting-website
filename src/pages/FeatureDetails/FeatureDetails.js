@@ -6,6 +6,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { SlCalender } from "react-icons/sl";
 import { IoLocationOutline } from 'react-icons/io5';
 import { addToDb } from '../../utilities/fakedb';
+import { toast } from 'react-hot-toast';
 
 
 const FeatureDetails = () => {
@@ -30,6 +31,7 @@ const FeatureDetails = () => {
 
     const handleAddToLocalStorage = (id) => {
         addToDb(id)
+        toast.success('Applied this job successfully');
     }
 
     return (

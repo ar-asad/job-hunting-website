@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AppledJobsAll from './AppledJobsAll';
-import { getShoppingCart } from '../../utilities/fakedb';
+import { getAppliedJob } from '../../utilities/fakedb';
 
 const AppliedJobs = () => {
 
@@ -18,7 +18,7 @@ const AppliedJobs = () => {
     }, []);
 
     useEffect(() => {
-        const storedCart = getShoppingCart();
+        const storedCart = getAppliedJob();
         const savedCart = [];
         // step 1: get id of the addedProduct
         for (const id in storedCart) {
