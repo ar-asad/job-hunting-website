@@ -6,6 +6,7 @@ import Statistics from '../pages/Statistics/Statistics';
 import AppliedJobs from '../pages/AppliedJobs/AppliedJobs';
 import Blogs from '../pages/Blogs/Blogs';
 import FeatureDetails from '../pages/FeatureDetails/FeatureDetails';
+import NotFound from '../pages/NotFound/NotFound';
 
 const router = createBrowserRouter([
     {
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '*',
-                element:
+                element: <NotFound></NotFound>
             }
         ]
     }
