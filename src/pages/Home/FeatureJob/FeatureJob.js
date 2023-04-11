@@ -4,12 +4,28 @@ import FeatureJobCards from './FeatureJobCards';
 
 const FeatureJob = () => {
     const [features, setFeatures] = useState([]);
+    const [isToggle, setToggle] = useState(false)
+
+
+
+    const handleToggle = () => {
+        setToggle(true)
+    }
 
     useEffect(() => {
         fetch('/feature.json')
             .then(res => res.json())
-            .then(data => setFeatures(data))
-    }, [])
+            .then(data => {
+                if (isToggle !== true) {
+                    const sliceData = data.slice(0, 4)
+                    setFeatures(sliceData)
+                }
+                else {
+                    setFeatures(data)
+                }
+            })
+    }, [isToggle]);
+
 
 
     return (
@@ -22,8 +38,12 @@ const FeatureJob = () => {
                 {
                     features.map(feature => <FeatureJobCards key={feature.id} feature={feature}></FeatureJobCards>)
                 }
-                <button>see all</button>
             </div>
+            {
+                isToggle !== true ? <div className='flex justify-center mt-10'>
+                    <button onClick={handleToggle} className="btn btn-primary ">See All Jobs</button>
+                </div> : ""
+            }
         </div>
     );
 };
