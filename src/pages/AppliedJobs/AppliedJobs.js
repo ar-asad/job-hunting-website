@@ -4,8 +4,8 @@ import { getAppliedJob } from '../../utilities/fakedb';
 
 const AppliedJobs = () => {
 
-    const [appliedJob, setAppliedJob] = useState([])
     const [allData, setAllData] = useState([])
+    const [appliedJob, setAppliedJob] = useState([])
     const [jobs, setJobs] = useState([]);
 
 
@@ -33,15 +33,12 @@ const AppliedJobs = () => {
                 // step 4: add the added product to the saved cart
 
                 savedCart.push(addedProduct);
-                console.log(addedProduct)
             }
-            // console.log('added Product', addedProduct)
         }
         // step 5: set the cart
         setAppliedJob(savedCart)
         setJobs(savedCart)
     }, [allData])
-    // console.log(jobs)
 
 
     const handleChange = (e) => {

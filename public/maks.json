@@ -1,42 +1,42 @@
 [
     {
         "id": "1",
-        "name": "Assignment-1",
+        "name": "Personal_portfolio:As-1",
         "mark": "60"
     },
     {
         "id": "2",
-        "name": "Assignment-2",
+        "name": "Landing_page:As-2",
         "mark": "60"
     },
     {
         "id": "3",
-        "name": "Assignment-3",
+        "name": "Css_frameworks:As-3",
         "mark": "60"
     },
     {
         "id": "4",
-        "name": "Assignment-4",
+        "name": "Basic_javascript:As-4",
         "mark": "60"
     },
     {
         "id": "5",
-        "name": "Assignment-5",
+        "name": "Integrate_javascript:As-5",
         "mark": "57"
     },
     {
         "id": "6",
-        "name": "Assignment-6",
+        "name": "Intermediate_js:As-6",
         "mark": "58"
     },
     {
         "id": "7",
-        "name": "Assignment-7",
+        "name": "Browser_debug:As-7",
         "mark": "60"
     },
     {
         "id": "8",
-        "name": "Assignment-8",
+        "name": "Simple_react:As-8",
         "mark": "60"
     }
 ]
