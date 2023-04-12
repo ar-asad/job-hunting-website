@@ -43,7 +43,6 @@ const AppliedJobs = () => {
 
     const handleChange = (e) => {
         const selectedJob = e.target.value;
-        console.log(selectedJob)
         if (selectedJob === "Remote") {
             const remoteJob = appliedJob.filter(job => job.job_type === selectedJob)
             setJobs(remoteJob);

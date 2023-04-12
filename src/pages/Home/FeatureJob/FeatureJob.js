@@ -26,10 +26,8 @@ const FeatureJob = () => {
             })
     }, [isToggle]);
 
-
-
     return (
-        <div className='my-10'>
+        <div className='my-7 lg:my-10'>
             <div className='text-center mb-10'>
                 <h2 className='text-3xl lg:text-5xl font-bold mb-4'>Featured Jobs</h2>
                 <p>Explore thousands of job opportunities with all the information you need. Its your future</p>

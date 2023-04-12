@@ -4,8 +4,6 @@ import { Area, AreaChart, CartesianGrid, Pie, PieChart, ReferenceLine, Responsiv
 
 const Statistics = () => {
     const data = useLoaderData();
-    console.log(data)
-
     return (
         <ResponsiveContainer className='my-10' width='100%' height={300}>
             <AreaChart data={data}

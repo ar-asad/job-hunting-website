@@ -20,14 +20,12 @@ const FeatureDetails = () => {
         fetch('/feature.json')
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 if (data) {
                     const unicData = data.find(d => d.id === Id)
                     setFeature(unicData)
                 }
             })
     }, [Id])
-    console.log(feature)
 
     const handleAddToLocalStorage = (id) => {
         addToDb(id)

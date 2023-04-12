@@ -7,9 +7,9 @@ const FeatureJobCards = ({ feature }) => {
     const { company_name, job_name, id, job_time, job_type, location, salary, job_img } = feature;
     return (
         <div className="card border border-slate-200">
-            <figure className="px-10 pt-10 grid justify-items-start ">
+            <div className="px-10 pt-10 text-start ">
                 <img src={job_img} alt="" className="rounded-xl w-4/12" />
-            </figure>
+            </div>
             <div className="card-body font-semibold ">
                 <h2 className="card-title font-bold text-xl">{job_name}</h2>
                 <p className=' text-lg'>{company_name}</p>
